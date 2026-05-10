@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-const CustomVideoPlayer: React.FC<{ src: string; poster: string }> = ({ src, poster }) => {
+const CustomVideoPlayer: React.FC<{ src: string; poster?: string }> = ({ src, poster }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -65,7 +65,8 @@ const CustomVideoPlayer: React.FC<{ src: string; poster: string }> = ({ src, pos
         overflow: 'hidden', 
         border: '8px solid #1A1A1A', 
         outline: '1px solid rgba(255, 184, 0, 0.3)',
-        boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(255, 184, 0, 0.1)' 
+        boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(255, 184, 0, 0.1)',
+        aspectRatio: '2.2 / 1'
       }}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => isPlaying && setShowControls(false)}
@@ -76,7 +77,8 @@ const CustomVideoPlayer: React.FC<{ src: string; poster: string }> = ({ src, pos
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
         onClick={togglePlay}
-        style={{ width: '100%', display: 'block' }}
+        className="video-content"
+        style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
       >
         <source src={src} type="video/mp4" />
       </video>
@@ -310,8 +312,7 @@ const LandingPage: React.FC = () => {
           <h2 style={{ fontSize: '2.5rem', marginBottom: '4rem' }}>Introducing <span style={{ color: 'var(--gold)' }}>Phaneros</span></h2>
           <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyContent: 'center' }}>
             <CustomVideoPlayer 
-              src="/phaneros.mp4" 
-              poster="/phaneros_classic.jpg"
+              src="/phanerosdemo.mp4" 
             />
           </div>
         </div>

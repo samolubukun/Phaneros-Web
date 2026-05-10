@@ -177,6 +177,11 @@ a {
   .controls-container input[style*="width: 80px"] {
     width: 50px !important;
   }
+
+  .video-content {
+    transform: none !important;
+    object-position: center 40% !important;
+  }
 }
 
 @media (min-width: 769px) {
