@@ -214,7 +214,7 @@ const LandingPage: React.FC = () => {
       <section id="about" className="section-padding section-white">
         <div className="container" style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <div className="mission-image" style={{ flex: '1 1 400px', padding: '2rem 0' }}>
-            <img src="/phaneros_classic.png" alt="Phaneros Classic" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', transform: 'scale(1.1)' }} />
+            <img src="/phaneros_classic.jpg" alt="Phaneros Classic" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', transform: 'scale(1.1)' }} />
           </div>
           <div className="mission-content" style={{ flex: '1 1 400px' }}>
             <h4 style={{ color: 'var(--gold)', fontWeight: 800, marginBottom: '1rem', textTransform: 'uppercase' }}>The Mission</h4>
@@ -235,49 +235,54 @@ const LandingPage: React.FC = () => {
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '4rem' }}>Phaneros Key <span style={{ color: 'var(--gold)' }}>Features</span></h2>
           <div className="features-grid">
             <div className="feature-item">
-              <img src="/phaneros_classic.png" alt="Dashboard Classic" />
+              <img src="/phaneros_classic.jpg" alt="Dashboard Classic" />
               <h3>Dashboard Classic</h3>
-              <p className="text-dim">Optimized for high-density monitoring and sub-millisecond detection response during live services.</p>
+              <p className="text-dim">The Classic View dashboard. This layout prioritizes the Live Transcript, a Bible book search/reader, and a "Recent Detections" list for automated scripture identification.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_studio.png" alt="Dashboard Studio" />
+              <img src="/phaneros_studio.jpg" alt="Dashboard Studio" />
               <h3>Dashboard Studio</h3>
-              <p className="text-dim">Comprehensive presentation suite featuring a logic-based Show Builder and granular Slide Composer.</p>
+              <p className="text-dim">Studio dashboard featuring a Show Builder, Slide Composer, and Resource management for professional live presentation creation and streamlined media orchestration.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_api_settings.png" alt="Intelligence" />
-              <h3>Intelligence Tier</h3>
-              <p className="text-dim">Multi-strategy ensemble matching using Aho-Corasick and Semantic Search (Vectorized Allusions).</p>
+              <img src="/phaneros_composer.jpg" alt="Slide Composer" />
+              <h3>Slide Composer</h3>
+              <p className="text-dim">The Slide Composer in action within the Studio layout. It shows the editing interface for a specific slide titled "Welcome," including template selection and duration settings.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_broadcast_settings.png" alt="Broadcast" />
-              <h3>Dual-Channel Output</h3>
-              <p className="text-dim">Independent control over Main and Alternative broadcast channels with transparent overlay support.</p>
+              <img src="/phaneros_theme_designer.jpg" alt="Theme Designer" />
+              <h3>Theme Designer</h3>
+              <p className="text-dim">Interface for customizing scripture styling, background aesthetics, and layout configurations, featuring live previews and theme management for presentations.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_theme_designer.png" alt="Theme Designer" />
-              <h3>Ingestion Pipeline</h3>
-              <p className="text-dim">Automated PDF-to-Presentation workflow using client-side rasterization for rapid asset deployment.</p>
+              <img src="/phaneros_media_presenter.jpg" alt="Media Resources" />
+              <h3>Media Resources</h3>
+              <p className="text-dim">Centralized media hub for managing images and videos, featuring an integrated Live Display and dedicated Resource tab for seamless asset deployment.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_speech_settings.png" alt="Speech" />
-              <h3>STT Infrastructure</h3>
-              <p className="text-dim">Resilient proxy bridging Whisper High-Fidelity, Vosk Local Fallback, and Deepgram Nova-3.</p>
+              <img src="/phaneros_broadcast_settings.jpg" alt="Broadcast Control" />
+              <h3>Broadcast Control</h3>
+              <p className="text-dim">The Broadcast configuration pop-up. It allows users to enable and manage two independent outputs for Main and Alternate with unique themes and browser source URLs for OBS.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_display_settings.png" alt="Display" />
-              <h3>Context Management</h3>
-              <p className="text-dim">Intelligent tracking of sermon flow to resolve short references and biblical neighborhoods accurately.</p>
+              <img src="/phaneros_speech_settings.jpg" alt="Speech Recognition" />
+              <h3>Speech Recognition</h3>
+              <p className="text-dim">Speech recognition selection offering Cloud Deepgram Nova-3 or local built-in transcription powered by either the Vosk Engine or Whisper.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_workspace_settings.png" alt="Workspace" />
-              <h3>Desktop Suite (Tauri)</h3>
-              <p className="text-dim">Native cross-platform performance for Windows, macOS, and Linux with an integrated Rust backend.</p>
+              <img src="/phaneros_api_settings.png" alt="Intelligence & APIs" />
+              <h3>Intelligence & APIs</h3>
+              <p className="text-dim">Settings menu for configuring Deepgram API keys for speech recognition and Cloudflare Embedding credentials for semantic search and vectorized allusions.</p>
             </div>
             <div className="feature-item">
-              <img src="/phaneros_media_presenter.png" alt="Media" />
-              <h3>Remote Automation</h3>
-              <p className="text-dim">Full OSC and REST API support for integration with Bitfocus Companion and hardware switchers.</p>
+              <img src="/phaneros_display_settings.png" alt="Display Mode Settings" />
+              <h3>Display Mode Settings</h3>
+              <p className="text-dim">Control center for Manual or Auto Broadcast modes, featuring an AI Direct toggle and adjustable confidence thresholds for intelligent scripture detection.</p>
+            </div>
+            <div className="feature-item">
+              <img src="/phaneros_workspace_settings.png" alt="Workspace Management" />
+              <h3>Workspace Management</h3>
+              <p className="text-dim">Flexible layout toggle to seamlessly switch between the transcript-focused Classic view and the composition-centric Studio dashboard for optimized workflow efficiency.</p>
             </div>
           </div>
         </div>
@@ -291,7 +296,7 @@ const LandingPage: React.FC = () => {
           <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyContent: 'center' }}>
             <CustomVideoPlayer 
               src="/phaneros.mp4" 
-              poster="/phaneros_classic.png"
+              poster="/phaneros_classic.jpg"
             />
           </div>
         </div>
