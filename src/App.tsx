@@ -57,7 +57,16 @@ const CustomVideoPlayer: React.FC<{ src: string; poster: string }> = ({ src, pos
 
   return (
     <div 
-      style={{ position: 'relative', width: '100%', maxWidth: '1000px', borderRadius: '20px', overflow: 'hidden', border: '8px solid #1A1A1A', boxShadow: '0 30px 60px rgba(0,0,0,0.2)' }}
+      style={{ 
+        position: 'relative', 
+        width: '100%', 
+        maxWidth: '1000px', 
+        borderRadius: '20px', 
+        overflow: 'hidden', 
+        border: '8px solid #1A1A1A', 
+        outline: '1px solid rgba(255, 184, 0, 0.3)',
+        boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(255, 184, 0, 0.1)' 
+      }}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
@@ -198,7 +207,7 @@ const LandingPage: React.FC = () => {
             <h1 style={{ color: 'white' }}>Elevate Your <span style={{ color: 'var(--gold)' }}>Presentations</span> with Phaneros</h1>
             <p className="hero-subtitle" style={{ color: 'white', opacity: 0.9, maxWidth: '700px', margin: '0 auto 2.5rem', fontWeight: 500 }}>
               Automating the bridge between spoken scripture and visual output. 
-              High-speed detection, professional presentation, and seamless integration.
+              High-speed detection, clear presentation, and seamless integration.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link to="/studio" className="btn btn-primary hero-btn" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem', gap: '0.75rem' }}>
@@ -214,15 +223,21 @@ const LandingPage: React.FC = () => {
       <section id="about" className="section-padding section-white">
         <div className="container" style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <div className="mission-image" style={{ flex: '1 1 400px', padding: '2rem 0' }}>
-            <img src="/phaneros_classic.jpg" alt="Phaneros Classic" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', transform: 'scale(1.1)' }} />
+            <img src="/phaneros_classic.jpg" alt="Phaneros Classic" style={{ 
+              width: '100%', 
+              borderRadius: '12px', 
+              boxShadow: '0 30px 60px rgba(0,0,0,0.4), 0 0 20px rgba(255, 184, 0, 0.1)', 
+              border: '1px solid rgba(255, 184, 0, 0.2)',
+              transform: 'scale(1.1)' 
+            }} />
           </div>
           <div className="mission-content" style={{ flex: '1 1 400px' }}>
             <h4 style={{ color: 'var(--gold)', fontWeight: 800, marginBottom: '1rem', textTransform: 'uppercase' }}>The Mission</h4>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '2rem' }}>Making the Word <span style={{ color: 'var(--gold)' }}>Manifest</span></h2>
+            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '2rem' }}>Making the Word <span style={{ color: 'var(--gold)' }}>Visible</span></h2>
             <p style={{ fontSize: '1.1rem', color: '#555', marginBottom: '2rem' }}>
-              Phaneros (Greek: φανερός) means "visible" or "clearly seen." This application is built 
-              to ensure that every spoken scripture in a live service is instantly visible to your audience, 
-              removing the technical hurdles between the pulpit and the screen.
+              Phaneros (Greek: φανερός) means "visible" or "clearly seen." This application is 
+              built to listen and automatically detect spoken scripture, providing a 
+              hands-free presentation that bridges the pulpit and the screen.
             </p>
             <Link to="/studio" className="btn btn-primary btn-pulse" style={{ background: '#000', color: '#fff', border: '2px solid var(--gold)' }}>Open Web Studio</Link>
           </div>
@@ -320,12 +335,12 @@ const LandingPage: React.FC = () => {
               <p style={{ color: '#555' }}>Semantic scripture resolution powered by Cloudflare Workers AI and high-dimensional verse embeddings.</p>
             </div>
             <div className="card" style={{ background: 'white', border: '1px solid #eee', padding: '2rem', borderRadius: '16px' }}>
-              <h3 style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Classic Detection</h3>
+              <h3 style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Classic Dashboard</h3>
               <p style={{ color: '#555' }}>Optimized interface for high-density Bible verse monitoring, instant lookup, and low-latency display orchestration.</p>
             </div>
             <div className="card" style={{ background: 'white', border: '1px solid #eee', padding: '2rem', borderRadius: '16px' }}>
-              <h3 style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Studio Orchestration</h3>
-              <p style={{ color: '#555' }}>Advanced presentation suite for logic-based show building, granular slide design, and structured sermon delivery.</p>
+              <h3 style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Studio Dashboard</h3>
+              <p style={{ color: '#555' }}>Presentation suite for show building, slide design, and structured sermon delivery.</p>
             </div>
             <div className="card" style={{ background: 'white', border: '1px solid #eee', padding: '2rem', borderRadius: '16px' }}>
               <h3 style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Broadcast Integration</h3>
@@ -339,7 +354,12 @@ const LandingPage: React.FC = () => {
       <section className="section-padding section-dark">
         <div className="container" style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <div className="desktop-image" style={{ flex: '1 1 400px' }}>
-            <img src="/phaneros_desktop_shot.png" alt="Desktop App" style={{ width: '100%', borderRadius: '12px', border: '1px solid #333' }} />
+            <img src="/phaneros_desktop_shot.png" alt="Desktop App" style={{ 
+              width: '100%', 
+              borderRadius: '12px', 
+              border: '1px solid rgba(255, 184, 0, 0.2)',
+              boxShadow: '0 30px 60px rgba(0,0,0,0.4), 0 0 20px rgba(255, 184, 0, 0.1)'
+            }} />
           </div>
           <div className="desktop-content" style={{ flex: '1 1 400px' }}>
             <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '2rem' }}>Desktop Native <span style={{ color: 'var(--gold)' }}>Performance</span></h2>
@@ -375,8 +395,7 @@ const LandingPage: React.FC = () => {
               <h2 style={{ fontWeight: 900, fontSize: '2rem', color: 'white', letterSpacing: '-0.05em', margin: 0 }}>Phaneros</h2>
             </div>
             <p className="text-dim footer-mission" style={{ maxWidth: '650px', margin: '0 auto', lineHeight: '1.6', fontWeight: 500 }}>
-              Intelligent real-time scripture detection for the modern church.<br className="desktop-only" />
-              Making the spoken word manifest.
+              Real-time Bible verse detection and presentation for live services.
             </p>
           </div>
           

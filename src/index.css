@@ -335,9 +335,17 @@ a {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: contain;
-  background: #111; /* Dark background for letterboxing if needed */
+  background: #111;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 184, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 184, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.feature-item:hover img {
+  border-color: rgba(255, 184, 0, 0.6);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 184, 0, 0.15);
+  transform: translateY(-5px);
 }
 
 /* Section Dividers like FreeShow */
@@ -439,6 +447,7 @@ footer {
   .central-play-button {
     width: 42px !important;
     height: 42px !important;
+    margin-top: -7.5px !important;
   }
 
   .play-icon-svg {
