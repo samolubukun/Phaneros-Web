@@ -6,12 +6,12 @@ const Hero: React.FC = () => {
     <section className="hero">
       <div className="container" style={{ position: 'relative', zIndex: 10, textAlign: 'center' }}>
         <div className="hero-content" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h1 style={{ color: 'white' }}>Elevate Your <span style={{ color: 'var(--gold)' }}>Presentations</span> with Phaneros</h1>
+          <h1 style={{ color: 'white' }}><span style={{ fontWeight: 500 }}>Elevate Your</span> <span style={{ color: 'var(--gold)' }}>Presentations</span> with Phaneros</h1>
           <p className="hero-subtitle" style={{ color: 'white', opacity: 0.9, maxWidth: '700px', margin: '0 auto 2.5rem', fontWeight: 500 }}>
             Automating the bridge between spoken scripture and visual output. 
             High-speed detection, clear presentation, and seamless integration.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="hero-buttons" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/studio" className="btn btn-primary hero-btn btn-launch-glow" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem', gap: '0.75rem' }}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               Launch Studio

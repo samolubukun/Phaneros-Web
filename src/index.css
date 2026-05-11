@@ -94,8 +94,14 @@ a {
   }
 
   .hero {
-    height: 85vh !important;
-    min-height: 600px !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    padding: 160px 0 100px !important;
+    background-color: #000 !important;
+    background-image: linear-gradient(to bottom, #000 39%, transparent 41%), url('/header-bg.webp') !important;
+    background-size: 100% 100%, 100% 60% !important;
+    background-position: top, bottom !important;
+    background-repeat: no-repeat !important;
   }
 
   footer {
@@ -120,7 +126,7 @@ a {
   }
 
   h1 {
-    font-size: 2.2rem !important;
+    font-size: 2.4rem !important;
     line-height: 1.2 !important;
   }
 
@@ -129,14 +135,19 @@ a {
   }
 
   .hero-subtitle {
-    font-size: 1.05rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 1.15rem !important;
+    margin-bottom: 3.5rem !important;
     line-height: 1.5 !important;
   }
 
   .hero-btn {
-    padding: 0.75rem 1.5rem !important;
-    font-size: 0.9rem !important;
+    padding: 0.85rem 1.8rem !important;
+    font-size: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .hero-buttons {
+    gap: 1.5rem !important;
   }
 
   .features-grid {
