@@ -97,7 +97,7 @@ a {
     min-height: 100vh !important;
     height: auto !important;
     padding: 160px 0 100px !important;
-    background-image: url('/header-bg-mobile.webp') !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('/header-bg-mobile.webp') !important;
     background-size: 100% 100% !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
