@@ -98,14 +98,25 @@ a {
     min-height: 600px !important;
   }
 
+  footer {
+    padding: 3rem 0 2rem !important;
+  }
+
   .footer-mission {
     font-size: 0.6rem;
   }
 
   .footer-bottom-text {
-    font-size: 0.7rem;
+    font-size: 0.75rem !important;
     width: 100%;
-    white-space: nowrap;
+    text-align: center !important;
+    margin: 0.2rem 0 !important;
+  }
+
+  .footer-bottom {
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
   }
 
   h1 {
@@ -624,16 +635,35 @@ footer {
 
 @media (max-width: 768px) {
   .main-download-btn {
-    padding: 0.8rem 1.2rem !important;
-    font-size: 1rem !important;
-    gap: 0.6rem !important;
-    width: auto !important;
-    max-width: 100%;
+    padding: 1rem 2rem !important;
+    font-size: 1.1rem !important;
+    gap: 0.8rem !important;
+    width: fit-content !important;
+    margin: 0 auto;
+    justify-content: center !important;
+    display: inline-flex !important;
   }
 
   .main-download-btn svg {
-    width: 20px !important;
-    height: 20px !important;
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .desktop-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .desktop-content h2, 
+  .desktop-content p {
+    text-align: center !important;
+  }
+
+  .desktop-content div {
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 

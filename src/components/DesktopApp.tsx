@@ -46,6 +46,7 @@ const DesktopApp: React.FC<DesktopAppProps> = ({ onLinuxClick, onDownload, downl
               gap: '1rem', 
               display: 'inline-flex', 
               alignItems: 'center',
+              justifyContent: 'center',
               padding: '1rem 2.5rem',
               fontSize: '1.2rem',
               width: 'fit-content',
