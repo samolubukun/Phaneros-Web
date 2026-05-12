@@ -25,7 +25,7 @@ const Features: React.FC = () => {
     {
       img: "/phaneros_media_presenter.jpg",
       title: "Media Resources",
-      desc: "Centralized media hub for managing images and videos, featuring an integrated Live Display and dedicated Resource tab for seamless asset deployment."
+      desc: "Centralized media hub for managing images and PDFs, featuring an integrated Live Display and dedicated Resource tab for seamless asset deployment."
     },
     {
       img: "/phaneros_broadcast_settings.jpg",
@@ -36,6 +36,11 @@ const Features: React.FC = () => {
       img: "/phaneros_speech_settings.jpg",
       title: "Speech Recognition",
       desc: "Speech recognition selection offering Cloud Deepgram Nova-3 or local built-in transcription powered by either the Vosk Engine or Whisper."
+    },
+    {
+      img: "/phaneros_bible_settings.png",
+      title: "Bible Translations",
+      desc: "Comprehensive support for multiple Bible versions including KJV, NIV, ESV, and more, allowing for instant version switching and multi-lingual scripture presentation."
     },
     {
       img: "/phaneros_api_settings.png",
