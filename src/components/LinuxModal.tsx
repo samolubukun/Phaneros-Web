@@ -58,10 +58,10 @@ const LinuxModal: React.FC<LinuxModalProps> = ({ onClose, onDownload, debUrl, rp
         <h3 style={{ fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', color: 'white', marginBottom: '1rem' }}>Choose Linux Package</h3>
         <p style={{ color: '#888', marginBottom: '2.5rem', fontSize: '0.95rem' }}>Select the format compatible with your distribution.</p>
         
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
           <button onClick={() => onDownload(debUrl)} className="btn linux-download-btn" style={{ 
             padding: '1.2rem', 
-            fontSize: '1rem',
+            fontSize: '0.95rem',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -70,13 +70,14 @@ const LinuxModal: React.FC<LinuxModalProps> = ({ onClose, onDownload, debUrl, rp
             width: '100%',
             background: 'transparent',
             border: '1px solid #333',
-            color: 'white'
+            color: 'white',
+            whiteSpace: 'nowrap'
           }}>
             Download .DEB (Debian/Ubuntu)
           </button>
           <button onClick={() => onDownload(rpmUrl)} className="btn linux-download-btn" style={{ 
             padding: '1.2rem', 
-            fontSize: '1rem', 
+            fontSize: '0.95rem', 
             background: 'transparent', 
             border: '1px solid #333', 
             color: 'white',
@@ -85,7 +86,8 @@ const LinuxModal: React.FC<LinuxModalProps> = ({ onClose, onDownload, debUrl, rp
             justifyContent: 'center',
             textAlign: 'center',
             cursor: 'pointer',
-            width: '100%'
+            width: '100%',
+            whiteSpace: 'nowrap'
           }}>
             Download .RPM (Fedora/RHEL)
           </button>
