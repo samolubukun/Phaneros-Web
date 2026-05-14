@@ -1,4 +1,5 @@
 import React from 'react';
+import { FeaturesGridIcon } from './OEMIcons';
 
 const Features: React.FC = () => {
   const features = [
@@ -62,6 +63,9 @@ const Features: React.FC = () => {
   return (
     <section id="features" className="section-padding section-dark">
       <div className="container">
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <FeaturesGridIcon size={40} />
+        </div>
         <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '4rem' }}>
           Phaneros Key <span style={{ color: 'var(--gold)' }}>Features</span>
         </h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MissionIcon } from './OEMIcons';
 
 const Mission: React.FC = () => {
   return (
@@ -15,6 +16,9 @@ const Mission: React.FC = () => {
           }} />
         </div>
         <div className="mission-content" style={{ flex: '1 1 400px' }}>
+          <div style={{ marginBottom: '1.5rem' }}>
+            <MissionIcon size={32} />
+          </div>
           <h4 style={{ color: 'var(--gold)', fontWeight: 800, marginBottom: '1rem', textTransform: 'uppercase' }}>The Mission</h4>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '2rem' }}>Making the Word <span style={{ color: 'var(--gold)' }}>Visible</span></h2>
           <p style={{ fontSize: '1.1rem', color: '#555', marginBottom: '2rem' }}>

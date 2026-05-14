@@ -1,4 +1,5 @@
 import React from 'react';
+import { NativePerformanceIcon } from './OEMIcons';
 
 interface DesktopAppProps {
   onLinuxClick: () => void;
@@ -10,7 +11,7 @@ const DesktopApp: React.FC<DesktopAppProps> = ({ onLinuxClick, onDownload, downl
   return (
     <section className="section-padding section-dark" style={{ padding: '12rem 0' }}>
       <div className="container" style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
-        <div className="desktop-image" style={{ flex: '1 1 400px', padding: '6rem 0' }}>
+        <div className="desktop-image desktop-only" style={{ flex: '1 1 400px', padding: '6rem 0' }}>
           <img src="/phaneros_desktop_shot.png" alt="Desktop App" style={{ 
             width: '100%', 
             borderRadius: '12px', 
@@ -20,9 +21,20 @@ const DesktopApp: React.FC<DesktopAppProps> = ({ onLinuxClick, onDownload, downl
           }} />
         </div>
         <div className="desktop-content" style={{ flex: '1 1 400px' }}>
+          <div style={{ marginBottom: '1.5rem' }}>
+            <NativePerformanceIcon size={32} />
+          </div>
           <h2 className="one-line-desktop" style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '2rem', lineHeight: '1.2' }}>
             Desktop Native <span style={{ color: 'var(--gold)' }}>Performance</span>
           </h2>
+          <div className="mobile-only" style={{ margin: '2rem 0' }}>
+            <img src="/phaneros_desktop_shot.png" alt="Desktop App" style={{ 
+              width: '100%', 
+              borderRadius: '12px', 
+              border: '1px solid rgba(255, 184, 0, 0.2)',
+              boxShadow: '0 30px 60px rgba(0,0,0,0.4), 0 0 20px rgba(255, 184, 0, 0.1)'
+            }} />
+          </div>
           <p style={{ marginBottom: '2rem' }}>
             Built on Tauri 2.1 for Windows, macOS, and Linux. Experience the power of 
             the Rust backend directly on your machine with minimal resource overhead.

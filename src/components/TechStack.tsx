@@ -1,4 +1,5 @@
 import React from 'react';
+import { IntelligenceIcon } from './OEMIcons';
 
 const TechStack: React.FC = () => {
   const techs = [
@@ -31,6 +32,9 @@ const TechStack: React.FC = () => {
   return (
     <section className="section-padding section-white" style={{ background: '#f8f8f8' }}>
       <div className="container">
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <IntelligenceIcon size={40} />
+        </div>
         <h2 className="one-line-desktop" style={{ textAlign: 'center', marginBottom: '4rem', fontSize: 'clamp(2rem, 4vw, 2.5rem)', lineHeight: '1.2' }}>
           Intelligence & <span style={{ color: 'var(--gold)' }}>Production</span>
         </h2>
